@@ -1,0 +1,363 @@
+<!DOCTYPE HTML>
+<html>
+
+<head>
+	<title>Joe Hendrix</title>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+	<link rel="stylesheet" href="assets/css/main.css" />
+</head>
+
+<body class="is-preload">
+
+	<!-- Header -->
+	<div id="header">
+
+		<div class="top">
+
+			<!-- Logo -->
+			<div id="logo">
+				<span class="image avatar48"><img src="images/avatar.jpg" alt="" /></span>
+				<h1 id="title">Joe Hendrix</h1>
+				<p>Principal Computer Scientist<br/>
+				<a href="https://www.sri.co">SRI International</a></p>
+			</div>
+
+			<!-- Nav -->
+			<nav id="nav">
+				<ul>
+					<li><a href="#top" id="overview-link"><span class="icon solid fa-user">About Me</span></a></li>
+					<li><a href="#projects" id="projects-link"><span class="icon solid fa-lightbulb">Projects</span></a></li>
+					<li><a href="#presentations" id="presentations-link"><span
+								class="icon solid fa-images">Presentations</span></a></li>
+					<li><a href="#publications" id="publications-link"><span class="icon solid fa-list">Publications</span></a>
+					</li>
+				</ul>
+			</nav>
+
+		</div>
+
+		<div class="bottom">
+
+			<!-- Social Icons -->
+			<ul class="icons">
+				<li><a href="https://github.com/joehendrix" class="icon brands fa-github"><span class="label">Github</span></a>
+				</li>
+				<li><a href="https://www.linkedin.com/in/joe-hendrix-4235047" class="icon brands fa-linkedin"><span class="label">LinkedIn</span></a>
+				</li>
+				<li><a href="https://scholar.google.com/citations?user=Z5Q30qYAAAAJ&hl=en&oi=sra" class="icon brands fa-google"><span class="label">Google Scholar</span></a>
+				</li>				
+				<li><a href="https://twitter.com/joe_hendrix_fm" class="icon brands fa-twitter"><span
+							class="label">Twitter</span></a></li>
+				<li><a href="mailto:joe.d.hendrix@gmail.com" class="icon solid fa-envelope"><span class="label">Email</span></a>
+				</li>
+			</ul>
+
+		</div>
+
+	</div>
+
+	<!-- Main -->
+	<div id="main">
+		<!-- About Me -->
+		<section id="about" class="three">
+			<div class="container">
+
+				<header>
+					<h2>Joe Hendrix</h2>
+				</header>
+
+
+				<p>
+					I am a Principal Computer Scientist at <a href="https://www.sri.com/">SRI International</a>.
+					I am interested using computation to make the world more trustworthy and fair, and
+					primarily do that through work
+					on automated reasoning, program verification and decompilation.
+				</p>
+				<a href="#" class="image featured"><img src="images/beach.jpg" alt="" /></a>
+			</div>
+		</section>
+
+		<!-- Projects -->
+		<section id="projects" class="two">
+			<div class="container">
+				<header>
+					<h2>Projects</h2>
+				</header>
+
+				<h3><a href="https://grackle.galois.com">Grackle</a></h3>
+				<a href="https://grackle.galois.com"><code>https://grackle.galois.com</code></a>
+				<p>
+					Grackle is a symbolic execution tool designed for symbolically executing
+					MATLAB and LLVM code, and evaluating those expressions using SAT and SMT
+					solvers such as ABC and Yices. Grackle is intended to enable engineers to
+					reason symbolically about numerical programs.
+					It can be used to, for example, find inputs that may crash a system or
+					exceeds physical tolerances, model compression and decompression routines,
+					or integrate numerical and symbolic solvers.
+				</p>
+				<h3>Reopt <a href="https://github.com/GaloisInc/reopt" class="icon brands fa-github"><span
+					class="label">Github</span></a></h3>
+				<p>
+					Reopt is a general purpose decompilation and recompilation tool for repurposing
+					application logic. It does this by analyzing machine code to recover a more
+					flexible program representation -- specifically the LLVM assembly language.
+					Once in this format, one can then apply optimization tools to optimize the LLVM,
+					recompile the application into optimized or security hardened object code, and
+					use Reopt to merge the recompiled code back into the original executable.
+				</p>
+				<h3>Galois Program Analysis Libraries</h3>
+				<p>
+					While at Galois, I lead initial development of many of the core libraries used
+					for program analysis and verification. This includes:
+				</p>
+				<h4>
+					Crucible
+					<a href="https://github.com/GaloisInc/crucible" class="icon brands fa-github"><span
+							class="label">Github</span></a>
+				</h4>
+				<p>Crucible
+					is a symbolic simulation framework that lets one construct formal
+					mathematical expressions that precisely capturing
+					the semantics of code.
+					It uses the <a href="#what4">what4 library</a> to send these
+					expressions to automated provers such as SAT and SMT solvers so that
+					you can verify programs correct or find bugs.
+					Crucible supports symbolic execution of many languages including
+					C/C++, Java, and Matlab.</p>
+
+				<h4>Macaw <a href="https://github.com/GaloisInc/macaw" class="icon brands fa-github"><span
+							class="label">Github</span></a></h3>
+					<p>Macaw is a library that analyzes machine code binaries to understand their structure
+						and the semantics of the code. It uses program analysis to identify functions in a binary,
+						understand the organization of code within each function, and then generates control flow
+						graphs describing the semantics.</p>
+					<h4>What4 <a href="https://github.com/GaloisInc/what4" class="icon brands fa-github"><span
+								class="label">Github</span></a></h4>
+					<p>
+						What4 is a Haskell library developed at Galois that presents a generic interface to SMT solvers (Z3, Yices,
+						etc.)
+						as well as some specialized solvers such as abc and blt.
+						It makes it easy to generate problems for the solvers, run satisfiability checks
+						and obtain results including counterexamples.
+					</p>
+					<h4><a href="https://hackage.haskell.org/package/parameterized-utils">Parameterized-utils </a>
+						<a href="https://github.com/GaloisInc/parameterized-utils" class="icon brands fa-github"><span
+						class="label">Github</span></a>
+						</h4>
+			<p>
+				Parameterized-utils is a collection of typeclasses and data structures
+				 for working with parameterized types, that is types that are polymorphic over a parameter.
+				 One example would be a map of type <em>Map k v</em> that for each type <em>tp</em>, 
+				 maps a key of type <em>k tp</em> to a value of type <em>v tp</em>.  This generalizes
+				 the normal key-value map in the Haskell containers package to 
+			</p>
+			<h3>
+				<a href="https://www.microsoft.com/security/blog/2012/08/02/attack-surface-analyzer-1-0-released/">
+					Microsoft Attack Surface Analyzer 1.0</a></h3>
+				<p>
+					The Microsoft Attack Surface Analyzer helps software developers, 
+					Independent Software Vendors (ISVs) and IT Professionals better understand changes
+					in Windows systems’ attack surface resulting from the installation of new applications.	
+				</p>	
+				<h3><a href="http://maude.cs.uiuc.edu/tools/itp/">The Maude Inductive Theorem Prover</a></h3>
+				<p>
+					The Maude Inductive Theorem Prover is an proof assistant for proving properties
+					about Maude specifications.  It supports structural and coverset induction schemes,
+					rewriting-based simplification and an arithmetic decision procedure.
+				</p>
+				<h3><a href="http://maude.cs.uiuc.edu/tools/scc/">The Maude Sufficient Completness Checker</a></h3>
+				<p>
+					The Maude Sufficient Completeness Checker is a pair tool designed to check
+					that one has completely defined operations in Maude specifications.  
+					The tool currently comes in two different versions, each with different features:
+					(1) a narrowing-based tool integrated with the
+					<a href="http://maude.cs.uiuc.edu/tools/itp/">Maude Inductive Theorem Prover</a> for
+					checking the sufficient completeness of specifications with conditions;
+					(2) a tree automata-based tool for checking the sufficient completeness of specifications
+					 with rewriting modulo associativity, commutativity, and identity.	
+				</p>
+				<h3><a href="http://formalmethods.web.engr.illinois.edu/ceta/">Combining Equational Tree Automata (CETA)</a></h3>
+				<p>
+					Ceta is a library for reasoning about combinations of equational tree languages.
+					It supports emptiness testing of tree languages definable by a Boolean combination
+					of regular tree automaton over an equational theory containing operators that are
+					associative and/or commutative with identity symbols.
+				</p>
+									
+			</div>
+		</section>
+		<!-- About Me -->
+		<section id="presentations" class="two">
+			<div class="container">
+				<header>
+					<h2>Presentations</h2>
+				</header>
+				<ul>
+					<li>
+						<a href="https://cps-vo.org/node/75267">Verified Binary Lifting (<a href="slides/HENDRIX_hcss2021.pdf">slides</a>)<br>
+						High Confidence Software and Systems Conference (HCSS) 2021						
+					</li>
+					<li>Towards Verified Decompilation using Lean 4
+						  <a href="https://www.youtube.com/watch?v=o_IcQyTkMuc" class="icon brands fa-youtube"><span class="label">Youtube</span></a><br>
+						Lean Together 2021<br>
+					</li>
+					<li>
+						High-Assurance Blockchains: Applications and Verification.<br>
+						HCSS 2018
+					</li>
+					<li>
+						Mobile Connected Devices: Security Challenges and Opportunities.<br>
+						SOCC 2016
+					</li>
+					<li>
+						Verification of Elliptic Curve Cryptography.<br>
+						HCSS 2012
+					</li>
+					<li>
+						Cryptol Tutorial.<br>
+						with Levent Erkök and Sean Weaver<br>
+						HCSS 2011
+					</li>
+				</ul>
+			</div>
+		</section>
+		<!-- Publications -->
+		<section id="publications" class="two">
+			<div class="container">
+				<header>
+					<h2>Publications</h2>
+				</header>
+				<h3>PhD Dissertation</h3>
+				<p>
+					<a href="https://www.ideals.illinois.edu/handle/2142/11487">Decision Procedures for Equationally Based Reasoning</a> (2008)<br>
+					University of Illinois at Urbana-Champaign					
+				</p>
+
+				
+
+				<h3>Conferences and Workshops</h3>
+				<ul>
+					<li>
+						<a href="https://www.cl.cam.ac.uk/~jrh13/spisa19.html">Towards Verified Binary Raising.</a><br>
+						Joe Hendrix, Guannan Wei, Simon Winwood.<br>
+						Workshop on Instruction Set Architecture Specification (SpISA 2019)						
+					</li>
+					<li>
+						<a href="https://dl.acm.org/doi/10.1145/3341704">Dependently typed Haskell in industry (experience report).</a><br>
+						David Thrane Christiansen, Iavor S. Diatchki, Robert Dockins, Joe Hendrix,
+					  	and Tristan Ravitch.<br>
+						Proc. ACM Program. Lang. 3 (ICFP): 100:1-100:16 (2019)
+					</li>
+					<li>
+						<a href="https://link.springer.com/chapter/10.1007%2F978-3-319-48869-1_5">Constructing Semantic Models of Programs with the Software Analysis Workbench.</a><br>
+						Robert Dockins, Adam Foltzer, Joe Hendrix, Brian Huffman, Dylan McNamee, and Aaron Tomb.<br>
+						VSTTE 2016: 56-72	
+					</li>					
+					<li>
+						<a href="http://smt2015.csl.sri.com/accepted-papers/">Bounded Integer Linear Constraint Solving via Lattice Search.</a>
+						<a href="" class="icon fa-solid fa-file-pdf"><span
+							class="label">pdf</span></a><br>
+						Joe Hendrix and Benjamin Jones.<br>
+						13th International Workshop on Satisfiability Modulo Theories (SMT 2015)	
+					</li>
+					<li>
+						<a href="https://doi.org/10.1145/2527269.2527277">SAW: The Software Analysis Workbench.</a><br>
+						Kyle Carter, Adam Foltzer, Joe Hendrix, Brian Huffman, Aaron Tomb.<br>
+						Proceedings of 2013 conference on High Integrity Language Technology (HILT 2013)						
+					</li>
+					<li>
+						<a href="https://doi.org/10.1145/2527269.2527277">Order-sorted Equational Unification Revisited.</a><br>
+						Joe Hendrix and José Meseguer.<br>
+						Electron. Notes Theor. Comput. Sci. 290: 37-50 (2012)						
+					</li>
+					<li>
+						<a href="https://doi.org/10.1007/978-3-642-14052-5_20">Coverset Induction with Partiality and Subsorts: A Powerlist Case Study</a><br>
+						Joe Hendrix, Deepak Kapur, and José Meseguer.<br>
+						ITP, First International Conference (Edinburgh, UK)
+						Volume 6172 of LNCS Springer, 2010: 275--290						
+					</li>
+					<li>
+						<a href="https://doi.org/10.1007/978-3-642-02658-4_13">Linear Functional Fixed-points.</a><br>
+						Nikolaj Bjorner and Joe Hendrix.<br>
+						CAV, 21st International Conference (Grenoble, France) Volume 5643 of LNCS Springer, 
+						2009: 124--139						
+					</li>
+					<li>
+						<a href="https://doi.org/10.1007/978-3-540-70590-1_10">Combining Equational Tree Automata Over AC and ACI Theories.</a><br>
+						Joe Hendrix and Hitoshi Ohsaki.<br>
+						Proceedings of RTA (Hagenberg, Austria) Volume 5117 of LNCS. Springer, 2008: 142--156
+					</li>
+					<li>
+						<a href="https://sewiki.iai.uni-bonn.de/rule08/">Order-sorted Unification.</a><br>
+						Joe Hendrix and José Meseguer.<br>
+						RULE 2008 (Hagenberg, Austria)						
+					</li>
+					<li>
+						<a href="https://doi.org/10.1007/978-3-540-73859-6_12">The Maude Formal Tool Environment.</a><br>
+						Manuel Clavel, Francisco Durán, Joe Hendrix, Salvador Lucas, José Meseguer 
+						and Peter Csaba Ölveczky.<br>  
+						Proceedings of CALCO (Bergen, Norway) Volume 4624 of LNCS. Springer, 
+						2007: 173--178.						
+					</li>
+					<li>
+						<a href="http://www.rdp07.org/secret.html">Diffie-Hellman Cryptographic Reasoning in the Maude-NRL Protocol 
+						Analyzer.</a><br>
+						Santiago Escobar, Joe Hendrix, Catherine Meadows, and José Meseguer.<br>
+						Proceedings of SecReT (Paris, France), 2007						
+					</li>
+					<li>
+						<a href="https://doi.org/10.1007/978-3-540-73449-9_18">On the Completeness of Context-Sensitive Order-sorted Specifications.</a><br>
+						Joe Hendrix and José Meseguer.<br>
+						Proceedings of RTA (Paris, France) Volume 4533 
+						of LNCS. Springer, 2007: 229--245.						
+					</li>
+					<li>
+						<a href="https://doi.org/10.1007/11814771_14">A Sufficient Completeness Checker for Linear Order-Sorted Specifications 
+						Modulo Axioms.</a><br>
+						Joe Hendrix, José Meseguer, and Hitoshi Ohsaki.<br>
+						Proceedings of IJCAR (Seattle, Washington). Volume 4130 of LNCS. Springer, 
+						2006: 151--155.						
+					</li>
+					<li>
+						<a href="https://doi.org/10.1007/11805618_5">Propositional Tree Automata.</a><br>
+						Joe Hendrix, Hitoshi Ohsaki and Mahesh 
+						Viswanathan.<br>
+						Proceedings of RTA (Seattle, Washington) Volume 4098 of 
+						LNCS. Springer, 2006: 50--65.						
+					</li>
+					<li>
+						<a href="https://doi.org/10.1007/978-3-540-32033-3_13">A Sufficient Completeness Reasoning Tool for Partial Specifications.</a><br>
+						Joe Hendrix, Manuel Clavel, and Jose Meseguer.<br>
+						Proceedings of RTA (Nara, Japan) Volume 3467 of LNCS. Springer, 2005: 165--174.
+					</li>
+					<li>
+						<a href="https://www.cs.utexas.edu/users/moore/acl2/workshop-2003/">Matrices in ACL2.</a><br>
+						Joe Hendrix.<br>
+						Proceedings of ACL2 Workshop (Boulder, Colorado), 2003						
+					</li>
+				</ul>
+			</div>
+		</section>
+
+	</div>
+
+	<!-- Footer -->
+	<div id="footer">
+		<!-- Copyright -->
+		<ul class="copyright">
+			<li>&copy; Joe Hendrix. All rights reserved.</li>
+		</ul>
+	</div>
+
+	<!-- Scripts -->
+	<script src="assets/js/jquery.min.js"></script>
+	<script src="assets/js/jquery.scrolly.min.js"></script>
+	<script src="assets/js/jquery.scrollex.min.js"></script>
+	<script src="assets/js/browser.min.js"></script>
+	<script src="assets/js/breakpoints.min.js"></script>
+	<script src="assets/js/util.js"></script>
+	<script src="assets/js/main.js"></script>
+</body>
+
+</html>
